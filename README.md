@@ -2,6 +2,9 @@
 
 This is a single-page web application built with React that allows users to search for movies using the OMDb API and view details of each movie.
 
+## AUTHOR 
+Veerapalli BhanuPrakash
+
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.

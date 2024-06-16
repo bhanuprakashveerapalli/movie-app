@@ -11,7 +11,7 @@ const App: React.FC = () => {
   const [movies, setMovies] = useState<Movie[]>([]);
   const [selectedMovie, setSelectedMovie] = useState<MovieDetailsType | null>(null);
 
-  const API_KEY = process.env.REACT_APP_OMDB_API_KEY;
+  const API_KEY ="16b5e08d";
 
   useEffect(() => {
     const fetchDefaultMovies = async () => {
