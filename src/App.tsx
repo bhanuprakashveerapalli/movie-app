@@ -15,7 +15,7 @@ const App: React.FC = () => {
 
   useEffect(() => {
     const fetchDefaultMovies = async () => {
-      const response = await axios.get(`http://www.omdbapi.com/?s=Batman&apikey=16b5e08d`);
+      const response = await axios.get(`https://www.omdbapi.com/?s=Batman&apikey=16b5e08d`);
       const data = response.data;
       if (data.Search) {
         setMovies(data.Search);
@@ -26,13 +26,13 @@ const App: React.FC = () => {
   }, [API_KEY]);
 
   const handleMovieSelect = async (movie: Movie) => {
-    const response = await axios.get(`http://www.omdbapi.com/?i=${movie.imdbID}&apikey=16b5e08d`);
+    const response = await axios.get(`https://www.omdbapi.com/?i=${movie.imdbID}&apikey=16b5e08d`);
     const movieDetails: MovieDetailsType = response.data;
     setSelectedMovie(movieDetails);
   };
 
   const handleSearch = async (title: string) => {
-    const response = await axios.get(`http://www.omdbapi.com/?s=${title}&apikey=16b5e08d`);
+    const response = await axios.get(`https://www.omdbapi.com/?s=${title}&apikey=16b5e08d`);
     const data = response.data;
     if (data.Search) {
       setMovies(data.Search);
